@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <section class="header">
+        <nav>
+            <div class="logo">
+                <h1>Contact Manager</h1>
+            </div>
+            <div id="navLinks" class="nav-links">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </div>
+            <img onclick="toggleMenu()" class="menuicon" height="22px" src="images/menu.png" alt="">
+        </nav>
+
+        <div class="text-box">
+            <h1>Contact Manager</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quas dolore in tenetur rerum! Ea, at
+                doloribus iste aliquam libero quibusdam! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Commodi, assumenda quia accusamus culpa ea incidunt soluta vel distinctio ab magni?</p>
+            <div id="msg" class="message"></div>
+        </div>
+        
+        <div class="container">
+            <form>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" placeholder="Enter First name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Sur Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" placeholder="Enter Sur name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Mobile Number</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="mno" placeholder="Enter Mobile Number..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Email <Address></Address></label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="email" placeholder="Enter Email Address..">
+                    </div>
+                </div>
+                <input onclick="addContact()" class="primary-btn" type="button" value="Add Contact">
+            </form>
+        </div>
+    </section>
+
+    <div class="text-box">
+        <h1>Contact List</h1>
+    </div>
+
+    <div id="contactDetails" class="cards">
+        
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
